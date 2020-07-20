@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name           = "SwiftNIOMQTTClient"
-  spec.version        = "0.1.2"
+  spec.version        = "0.1.3"
   spec.summary        = "SwiftNIO-based MQTT v5.0 client."
   spec.module_name    = "NIOMQTTClient"
 
