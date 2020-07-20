@@ -44,8 +44,16 @@ struct MessageView: View {
                 self.client.subscribe(topic: "niomqtt")
                 self.client.publish(topic: "niomqtt", message: "Hello~")
             }
-
+          
+            self.client.onDisconnect = { error in
+              print("disconnected with error = \(error)")
+            }
+                       
             self.client.connect()
+          
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+              self.client.disconnect()
+            }
         }
     }
 

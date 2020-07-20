@@ -55,6 +55,14 @@ public final class MQTTClient {
         channel = makeChannel(
             backoffIterator: configuration.connectionBackoff?.makeIterator())
     }
+  
+    public func disconnect() {
+      connectivity.initiateUserShutdown()
+      channel.whenSuccess { channel in
+        channel.close(mode: .all, promise: nil)
+      }
+      onDisconnect?(nil)
+    }
 
     @discardableResult
     public func publish(topic: String, message: String) -> EventLoopFuture<Void>? {

@@ -71,7 +71,7 @@ public final class ConnectivityStateMonitor {
     }
 
     /// Initiates a user shutdown.
-    func initiateUserShutdown() {
+    public func initiateUserShutdown() {
         lock.withLockVoid {
             setNewState(to: .shutdown)
             userInitiatedShutdown = true
