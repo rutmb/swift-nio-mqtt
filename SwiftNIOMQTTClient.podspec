@@ -17,6 +17,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target      = "12.0"
   spec.osx.deployment_target      = "10.14"
   spec.tvos.deployment_target     = "12.0"
+  spec.watchos.deployment_target  = "6.1"
 
   spec.source       = { :git => "https://github.com/rutmb/swift-nio-mqtt.git", :tag => "#{spec.version}" }
 
