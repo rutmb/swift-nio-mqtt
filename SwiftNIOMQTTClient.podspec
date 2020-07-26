@@ -25,6 +25,6 @@ Pod::Spec.new do |spec|
 
   spec.dependency "SwiftNIOTransportServices", "~> 1.0"
   spec.dependency "Logging", "~> 1.0"
-  spec.dependency "MQTTCodec", "~> 0.1"
+  spec.dependency "MQTTCodec", "~> 0.1.3"
 
 end
