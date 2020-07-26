@@ -15,17 +15,17 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "bc661cbb771328e09faa65432628e9ff6fd333d5",
-          "version": "2.10.0"
+          "revision": "8a865bd15e69526cbdfcfd7c47698eb20b2ba951",
+          "version": "2.19.0"
         }
       },
       {
         "package": "swift-nio-transport-services",
-        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
+        "repositoryURL": "https://github.com/rutmb/swift-nio-transport-services",
         "state": {
           "branch": null,
-          "revision": "80b11dc13261e0e52f75ea3a0b2e04f24e925019",
-          "version": "1.2.1"
+          "revision": "08425e5c662e06521162986b4ff1890a2d4feb10",
+          "version": null
         }
       }
     ]
