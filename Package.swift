@@ -12,7 +12,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
-        .package(url: "https://github.com/rutmb/swift-nio-transport-services", from: "1.7.0"),
+        .package(url: "https://github.com/rutmb/swift-nio-transport-services", from: "1.7.1"),
     ],
     targets: [
         .target(name: "MQTTCodec", dependencies: ["NIO", "NIOFoundationCompat"]),

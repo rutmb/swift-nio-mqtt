@@ -14,7 +14,7 @@
 		0505CF3C23199CCB00577414 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0505CF3B23199CCB00577414 /* Preview Assets.xcassets */; };
 		0505CF3F23199CCB00577414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0505CF3D23199CCB00577414 /* LaunchScreen.storyboard */; };
 		052C411F23C5404B007B32F5 /* NIOMQTTClient in Frameworks */ = {isa = PBXBuildFile; productRef = 052C411E23C5404B007B32F5 /* NIOMQTTClient */; };
-		7885130C24CDEB01002D255C /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 7885130B24CDEB01002D255C /* NIOTransportServices */; };
+		7885131824CDEDEE002D255C /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 7885131724CDEDEE002D255C /* NIOTransportServices */; };
 		826B6B68237A4C7900002569 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 826B6B67237A4C7900002569 /* NIO */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7885130C24CDEB01002D255C /* NIOTransportServices in Frameworks */,
+				7885131824CDEDEE002D255C /* NIOTransportServices in Frameworks */,
 				826B6B68237A4C7900002569 /* NIO in Frameworks */,
 				052C411F23C5404B007B32F5 /* NIOMQTTClient in Frameworks */,
 			);
@@ -110,7 +110,7 @@
 			packageProductDependencies = (
 				826B6B67237A4C7900002569 /* NIO */,
 				052C411E23C5404B007B32F5 /* NIOMQTTClient */,
-				7885130B24CDEB01002D255C /* NIOTransportServices */,
+				7885131724CDEDEE002D255C /* NIOTransportServices */,
 			);
 			productName = NIOMQTTExample;
 			productReference = 0505CF2F23199CCA00577414 /* MQTT.app */;
@@ -142,7 +142,7 @@
 			mainGroup = 0505CF2623199CCA00577414;
 			packageReferences = (
 				826B6B66237A4C7900002569 /* XCRemoteSwiftPackageReference "swift-nio" */,
-				7885130A24CDEB01002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+				7885131624CDEDEE002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
 			);
 			productRefGroup = 0505CF3023199CCA00577414 /* Products */;
 			projectDirPath = "";
@@ -371,12 +371,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7885130A24CDEB01002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+		7885131624CDEDEE002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rutmb/swift-nio-transport-services";
 			requirement = {
-				kind = revision;
-				revision = 08425e5c662e06521162986b4ff1890a2d4feb10;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
 			};
 		};
 		826B6B66237A4C7900002569 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
@@ -394,9 +394,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = NIOMQTTClient;
 		};
-		7885130B24CDEB01002D255C /* NIOTransportServices */ = {
+		7885131724CDEDEE002D255C /* NIOTransportServices */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7885130A24CDEB01002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			package = 7885131624CDEDEE002D255C /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
 			productName = NIOTransportServices;
 		};
 		826B6B67237A4C7900002569 /* NIO */ = {

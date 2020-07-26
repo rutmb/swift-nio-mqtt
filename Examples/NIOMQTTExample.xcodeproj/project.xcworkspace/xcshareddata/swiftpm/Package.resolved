@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/rutmb/swift-nio-transport-services",
         "state": {
           "branch": null,
-          "revision": "08425e5c662e06521162986b4ff1890a2d4feb10",
-          "version": null
+          "revision": "20fc4058e246cdde231539e9015d26db6af8ba7e",
+          "version": "1.7.1"
         }
       }
     ]
